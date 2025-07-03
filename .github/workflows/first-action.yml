@@ -4,6 +4,10 @@ jobs:
   First_Job:
     runs-on: ubuntu-latest
     steps:
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
+      with:
+        terraform_version: latest
     - name: Azure Login
       uses: azure/login@v1
       with:
