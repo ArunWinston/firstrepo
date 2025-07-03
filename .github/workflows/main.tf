@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "rg" {
   name     = "${random_pet.prefix.id}-rg"
 }
 
-# Create virtual network
+# Create virtual network in subscription
 resource "azurerm_virtual_network" "my_terraform_network" {
   name                = "${random_pet.prefix.id}-vnet"
   address_space       = ["10.0.0.0/16"]
