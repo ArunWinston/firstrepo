@@ -11,7 +11,7 @@ jobs:
     - name: Azure Login
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE CREDENTIALS }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: print greeting
       run: echo "Hello world"
     - name: bye greeting
