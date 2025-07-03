@@ -4,6 +4,10 @@ jobs:
   First_Job:
     runs-on: ubuntu-latest
     steps:
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE CREDENTIALS }}
     - name: print greeting
       run: echo "Hello world"
     - name: bye greeting
