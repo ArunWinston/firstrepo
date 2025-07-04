@@ -174,3 +174,6 @@ variable "prefix" {
   type        = string
 }
 
+variable "resource_group_location" {
+  default     = "East US"
+}
