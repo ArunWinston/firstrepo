@@ -1,4 +1,4 @@
-name: "Terraform Deployment"
+name: "Terraform VM BUILD"
 on: 
   push:
     branches:
