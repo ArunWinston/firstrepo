@@ -38,6 +38,5 @@ jobs:
       if: github.event_name == 'push'
       working-directory: ./.github/workflows
       run: terraform apply -auto-approve
-      
-      working-directory: ./.github/workflows
+    
       
