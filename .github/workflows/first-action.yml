@@ -28,14 +28,18 @@ jobs:
       
     - name: Terraform Init
       run: terraform init
+      working-directory: ./.github/workflows
       
     - name: Terraform Plan
       run: terraform plan
+      working-directory: ./.github/workflows
       
     - name: Terraform Apply
       if: github.event_name == 'push'
+      working-directory: ./.github/workflows
       run: terraform apply -auto-approve
       
     - name: Terraform Destroy
       run: terraform destroy -auto approve
+      working-directory: ./.github/workflows
       
