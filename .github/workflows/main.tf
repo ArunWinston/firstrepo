@@ -169,3 +169,8 @@ resource "random_pet" "prefix" {
   prefix = var.prefix
   length = 1
 }
+
+variable "prefix" {
+  type        = string
+}
+
