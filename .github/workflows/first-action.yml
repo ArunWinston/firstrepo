@@ -39,7 +39,5 @@ jobs:
       working-directory: ./.github/workflows
       run: terraform apply -auto-approve
       
-    - name: Terraform Destroy
-      run: terraform destroy -auto approve
       working-directory: ./.github/workflows
       
